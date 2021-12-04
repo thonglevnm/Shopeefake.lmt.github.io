@@ -1,0 +1,141 @@
+
+@media (min-width:1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+/* TABLET */
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__search {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .header__search-look {
+        flex: unset;
+    }
+
+}
+
+/* MOBILE AND TABLET*/
+@media (max-width:1023px) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+    :root {
+        --height-header:70px;
+        --height-headnav:0px;
+    }
+    .header {
+        position: fixed;
+        z-index: 10;
+    }
+
+    .header__cart,
+    .header__logo-img  {
+        width: unset;
+    }
+
+    .header__cart {
+        width: 60px;
+        margin: 0;
+    }
+
+    .header__search-cart-quantity {
+        left: calc(100% - 25px);
+    }
+
+    .header__cart-list {
+        position: fixed;
+        right: 0;
+        width: 100%;
+        top: var(--height-header);
+    }
+
+    .header__cart-list::before {
+        display: none;
+    }
+
+    .header__cart::after {
+        right: 0;
+        width: 100%;
+        top: calc(100% - 4px);
+        height: 25px;
+    }
+
+    .header__cart-list  {
+        padding: 0 calc((100% - 644px) / 2);
+    }
+
+    .header__sort-bar {
+        display: flex;
+    }
+
+    .app__container {
+        margin-top: calc(var(--height-header) + var(--header-sortbar-height));
+    }
+}
+/* MOBILE */
+@media (max-width:739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+   
+    .header__search {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        width: 110px;
+    }
+
+    .pagination__item-link {
+        font-size: 1.6rem;
+        margin: 0;
+        min-width: 36px;
+        height: 28px;
+    }
+
+    .app__container {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .app__container-wrapper {
+        margin-top: 0;
+    }
+    
+    .footer__content {
+        padding: 0 20px;
+    }
+
+    .footer__list-heading {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .footer__list {
+        justify-content: center;
+    }
+
+    .footer__item-link {
+        justify-content: center;
+    }
+
+    .footer__list-down  {
+        justify-content: center;
+    }
+
+    .footer__list-apps {
+        margin: 0;
+    }
+
+    .footer__link-apps {
+        padding: 8px 0;
+    }
+}
