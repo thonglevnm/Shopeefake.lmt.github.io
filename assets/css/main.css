@@ -419,6 +419,7 @@
     background-color: var(--white-color);
     transform-origin: calc(100% - 20px) top;
     animation: scaleOn .2s ease-in;
+    -webkit-animation: scaleOn .2s ease-in ;
     z-index: 1;
     display: none;
 }
@@ -1145,6 +1146,7 @@ i.home__product-item__like-icon--fill {
     background-color: #e5e5e5;
     width: 100%;
     animation: searchMobile linear 0.4s;
+    -webkit-animation: searchMobile linear 0.4s;
     transform: translateY(156%);
     will-change: transform;
     z-index: 9;
